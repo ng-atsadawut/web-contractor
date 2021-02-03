@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Original Group</title>
+<title>Original Group - Contact</title>
 <meta charset="UTF-8">
 <style>
 * {
@@ -121,8 +121,17 @@ body {
 </head>
 <body>
 
-@include('fragment.header')
-@include('fragment.topmenu')
+<div class="header">
+  <h1>My Website</h1>
+  <p>A <b>responsive</b> website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Aboust</a>
+  <a href="#" class="right">Contact</a>
+</div>
 
 <div class="row">
   <div class="side">
@@ -151,7 +160,9 @@ body {
   </div>
 </div>
 
-@include('fragment.footer')
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
 </body>
 </html>
