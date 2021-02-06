@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use Log;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -13,9 +14,13 @@ class ContactController extends Controller
     }
 
     public function postContract(Request $request) {
-        {
 
-            Log::debug('postContract----------------------');
+            Log::info('postContract----------------------');
+
+            Log::info('txtName  : '.$request->get('txtName'));
+            Log::info('txtEmail : '.$request->get('txtEmail'));
+            Log::info('txtPhone : '.$request->get('txtPhone'));
+            Log::info('txtMsg   : '.$request->get('txtMsg'));
             // // Form validation
             // $this->validate($request, [
             //     'name' => 'required',
@@ -41,7 +46,6 @@ class ContactController extends Controller
             // });
     
             // return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
-        }
     }
     
 }

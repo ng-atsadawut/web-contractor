@@ -135,7 +135,9 @@ body {
     <div class="contact-image">
         <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
     </div>
-    <form method="post" action="{{ URL::asset('contact') }}">
+    <form method="post" action="/contact">
+      <!--solve-the-page-expired-erroe 419 add @csrf -->
+      @csrf
         <h3>Drop Us a Message</h3>
        <div class="row">
             <div class="col-md-6">
