@@ -1,31 +1,28 @@
 
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{ URL::asset('images/spring-001.jpg') }}" alt="" title="" style="width:13.2rem;height:6.rem">
+<Style>
+  .carousel-inner{
+  width:100%;
+  max-height: 250px !important;
+}
+</Style>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" >
+    <div class="carousel-item active" width="96">
+      <img class="d-block w-100"src="{{ URL::asset('images/building/building-001.jpg') }}" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img src="{{ URL::asset('images/spring-002.jpg') }}" alt="" title="" style="width:13.2rem;height:6.rem">
+    <div class="carousel-item" width="96">
+      <img class="d-block w-100" src="{{ URL::asset('images/building/building-002.jpg') }}" alt="Second slide">
     </div>
-    <div class="carousel-item">
-      <img src="{{ URL::asset('images/spring-003.jpg') }}" alt="" title="" style="width:13.2rem;height:6.rem">
+    <div class="carousel-item" width="96">
+      <img class="d-block w-100" src="{{ URL::asset('images/building/building-003.jpg') }}" alt="Third slide">
     </div>
   </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
 </div>
