@@ -2,7 +2,7 @@
 <Style>
   .carousel-inner{
   width:100%;
-  max-height: 250px !important;
+  max-height: 250px;
 }
 </Style>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

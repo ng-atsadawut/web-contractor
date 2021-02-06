@@ -1,5 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 /*
  * |--------------------------------------------------------------------------
@@ -12,7 +14,7 @@ use Illuminate\Support\Facades\Route;
  * |
  */
 
-Route::get('/', ('HomeController@demo'));
+Route::get('/', 'HomeController@demo');
 
 Route::get('/home', function () {
     return view('home');
@@ -22,14 +24,12 @@ Route::get('/learn', function () {
     return view('learn');
 });
 
-Route::get('/test', function () {
-    return 'testtttttttttttttttt';
-});
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/ohh', [HomeController::class, 'demo']);
 
-// Auth::routes();
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/contact', [ContactController::class, 'getContract']);
+Route::post('/contact', [ContactController::class, 'postContract']);
