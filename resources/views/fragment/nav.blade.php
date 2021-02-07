@@ -10,17 +10,18 @@
             <a class="nav-link" href="{{url('/home')}}"> หน้าแรก <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link active" href="#"> เกี่ยวกับ </a>
+            <a class="nav-link active" href="{{url('/about')}}"> เกี่ยวกับ </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#"> บริการ </a>
+            <a class="nav-link active" href="{{url('/service')}}"> บริการ </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#"> ผลงาน </a>
+            <a class="nav-link active" href="{{url('/portfolio')}}"> ผลงาน </a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="{{url('/contact')}}"> ติดต่อ </a>
         </li>
+        
       </ul>
     </div>
   </nav>

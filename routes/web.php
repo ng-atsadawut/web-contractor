@@ -20,6 +20,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/service', function () {
+    return view('service');
+});
+
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
+
 Route::get('/learn', function () {
     return view('learn');
 });

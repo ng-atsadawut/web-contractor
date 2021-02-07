@@ -8,8 +8,9 @@
 
 </head>
 <body>
-
   @include('fragment.nav')
+  <br>
+  <br>
 
   <div class="container contact-form">
     <div class="contact-image">
@@ -42,6 +43,12 @@
         </div>
     </form>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 @include('fragment.footer')
 
