@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarsExample02">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#"> หน้าแรก <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{url('/home')}}"> หน้าแรก <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
             <a class="nav-link active" href="#"> เกี่ยวกับ </a>
@@ -19,7 +19,7 @@
             <a class="nav-link active" href="#"> ผลงาน </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#"> ติดต่อ </a>
+            <a class="nav-link active" href="{{url('/contact')}}"> ติดต่อ </a>
         </li>
       </ul>
     </div>

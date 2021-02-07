@@ -3,8 +3,12 @@ namespace App\Http\Controllers;
 use Log;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Article;
+use App\Mail\TestMail;
+use Illuminate\Support\Facades\Mail;
+ 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 
 class ContactController extends Controller
 {
@@ -21,32 +25,31 @@ class ContactController extends Controller
             Log::info('txtEmail : '.$request->get('txtEmail'));
             Log::info('txtPhone : '.$request->get('txtPhone'));
             Log::info('txtMsg   : '.$request->get('txtMsg'));
-            // // Form validation
-            // $this->validate($request, [
-            //     'name' => 'required',
-            //     'email' => 'required|email',
-            //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            //     'subject'=>'required',
-            //     'message' => 'required'
-            //  ]);
+
+            $mail_to = "ng.atsadawut@gmail.com";
+
+            $data['txtName'] = $request->get('txtName');
+            $data['txtEmail'] = $request->get('txtEmail');
+            $data['txtPhone'] = $request->get('txtPhone');
+            $data['txtMsg'] = $request->get('txtMsg');
+
+            Mail::send('emails.mail', $data, function($message) {
+
+                $message->to(['ng.atsadawut@gmail.com','patpolpatpol@gmail.com'], 'Receiver Name')
     
-            // //  Store data in database
-            // Contact::create($request->all());
-    
-            // //  Send mail to admin
-            // \Mail::send('mail', array(
-            //     'name' => $request->get('name'),
-            //     'email' => $request->get('email'),
-            //     'phone' => $request->get('phone'),
-            //     'subject' => $request->get('subject'),
-            //     'user_query' => $request->get('message'),
-            // ), function($message) use ($request){
-            //     $message->from($request->email);
-            //     $message->to('digambersingh126@gmail.com', 'Admin')->subject($request->get('subject'));
-            // });
-    
-            // return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+                        ->subject('Tuts Make Mail');
+            });
+
+            // Mail::raw('Hi, welcome to laravelarticle.com!', function ($mail) {
+            //     $mail->from('info@example.com');
+            //     $mail->to($mail_to);
+            //     $mail->subject('Welcome E-mail');
+            //     });
+        
+                
+            return 'Successfully send';
     }
+
     
 }
 
