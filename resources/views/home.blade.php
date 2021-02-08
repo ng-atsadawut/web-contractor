@@ -27,6 +27,10 @@
 
 </style>
 
+{{-- plugin facebook --}}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v9.0" nonce="MxA4HWc1"></script>
+
 </head>
 <body>
   
@@ -74,32 +78,63 @@
 
 @include('fragment.nav')
 
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2021</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2021</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Original Group</h1>
+    <h3>รับเหมาต่อเติมบ้าน</h3>
+    <p>
+      หากท่านกำลังมองหาช่างต่อเติมบ้านในราคาถูก เราขอแนะนำ ช่างมืออาชีพที่ผ่านงานก่อสร้างมาอย่างยาวนาน เรายินดี<br>
+      รับเหมาต่อเติมบ้าน อาคาร ทั้งงานต่อเติมหลังคา กันสาด ต่อเติมห้องครัว งานปูพื้นปูกระเบื้อง งานฉาบ งานทาสี และอื่นๆอีกมากมาย ตามความต้องการของลูกค้า 
+      โดยฝีมือของช่างมืออาชีพ รับประกันตามความพึงพอใจ
+    </p>
   </div>
 </div>
+
+<!-- facebok plugin -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <img class="img-thumbnail border-top-0 border-left-0" width="100%" src="https://media1.tenor.com/images/58e035c7b998c64cf0b7dc22c623e3b3/tenor.gif?itemid=13429938" alt="Home Body">
+    </div>
+  
+    <div class="col-md-4">
+      <div class="fb-page" data-href="https://www.facebook.com/OriginalManage/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/OriginalManage/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/OriginalManage/">Original Group - รับเหมาต่อเติม รีโนเวทบ้าน</a>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-thumbnail border-top-0 border-left-0 " src="images/homeBody/Home01.png" alt="Home Body">
+      <br><br>
+      <h3>ต่อเติมหลังคากันสาด</h3>
+      <p>รับต่อเติมหลังคากันสาดโดยวัสดุคุณภาพ มีให้เลือกหลายแบบตามความต้องการของลูกค้า หลังคาแบบธรรมดาหรือจะสไตล์โมเดิล สามารถเลือกวัสดุหลังคาได้ตามต้องการ ไม่ว่าจะเป็นไวนิล เมทัลชีท หรือแม้กระทั่งวัสดุแบบเก็บเสียง</p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-thumbnail border-top-0 border-left-0" src="images/homeBody/Home02.png" alt="Home Body">
+      <br><br>
+      <h3>งานก่อฉาบ</h3>
+      <p>งานก่อฉาบไม่ว่าจะต่อเติมห้องครัว ก่อผนังกำแพง<br>บิ้วอินต่างๆ สามารถทำได้ตามความต้องการของลูกค้า งานตีฝ้าต่างๆ งานทาสี งานปูกระเบื้อง ครบจบในที่เดียว</p>
+    </div>
+    <div class="col-md-4">
+      <img class="img-thumbnail border-top-0 border-left-0" src="images/homeBody/Home03.png" alt="Home Body">
+      <br><br>
+      <h3>งานระบบ</h3>
+      <p>งานระบบก็สามารถทำได้ ทั้งเดินไฟ วางปลั๊กตามตำแหน่งต่างๆ รวมถึงงานประปา ทำรางน้ำ ออกแบบได้อย่างเป็นระบบ และถูกต้องตามกิจลักษณะ </p>
+    </div>
+  </div>
+
+  <hr>
+
+</div> <!-- /container -->
 
 @include('fragment.footer')
 
